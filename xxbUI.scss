@@ -1,0 +1,36 @@
+/*第三方库
+--------------*/
+@import "./lib/lib";
+
+/*业务变量
+--------------*/
+@import "./variables/variables";
+
+/*基础样式与重置样式
+--------------*/
+@import "./base/base";
+
+/*导入函数
+--------------*/
+@import "./mixins/mixins";
+
+/*布局全局命名空间
+--------------*/
+@import "./layouts/layouts";
+
+/*组件全局命名空间
+--------------*/
+@import "./components/components";
+
+/*对象全局命名空间
+--------------*/
+@import "./objects/objects";
+
+/*状态全局命名空间
+--------------*/
+@import "./states/states";
+
+/*实用类全局命名空间
+--------------*/
+@import "./utils/utils";
+
