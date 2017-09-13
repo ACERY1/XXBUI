@@ -1,0 +1,19 @@
+.l-row__mid{
+  @include horMidBox()
+}
+
+.l-col__mid{
+  @include verMidBox()
+}
+
+.l-all__mid{
+  @include allMidBox()
+}
+
+.l-row{
+  @include rowBox()
+}
+
+.l-col{
+  @include colBox()
+}
