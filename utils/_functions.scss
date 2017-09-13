@@ -1,0 +1,32 @@
+/*the interface to operate the map of some values*/
+
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+/*key is size*/
+@function font_clr($key){
+  @return map_get($grays,$key)
+}
+
+@function button_clr($key){
+  @return map_get($buttons,$key)
+}
+
+@function input_clr($key){
+  @return map_get($inputs,$key)
+}
+
+/*key is status*/
+@function background_clr($key){
+  @return map_get($backgrounds,$key)
+}
+
+/*key is status*/
+@function progress_clr($key){
+  @return map_get($progressBars,$key)
+}
+
+@function border_clr($key){
+  @return map_get($buttons,$key)
+}

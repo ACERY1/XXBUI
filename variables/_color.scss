@@ -1,1 +1,106 @@
-/*配置颜色*/
+/*配置颜色
+* 命名规则
+*  _color  ,__status, -size 优先性如该顺序
+*/
+
+/*字体颜色
+-------------------*/
+$white: #fff !default;
+$gray-100: #f8f8f8 !default;
+$gray-200: #e4e4e4 !default;
+$gray-300: #dcdcdc !default;
+$gray-400: #c1c1c1 !default;
+$gray-500: #b9b9b9 !default;
+$gray-600: #969696 !default;
+$gray-700: #7d7d7d !default;
+$gray-800: #36393d !default;
+$gray-900: #231815 !default;
+$black: #000 !default;
+
+/*主色调
+-------------------*/
+$yellow-100: #ffd944 !default;
+$yellow-200: #ffcb00 !default;
+$orange: #f4a100 !default;
+$blue: #3d82f7;
+$red: #f76162;
+
+/*功能颜色
+-------------------*/
+// 背景色
+$bg: #ffffff !default;
+$bg__hover: #f2f2f2 !default;
+
+// 按钮色
+$btn_yellow: #ffd944 !default;
+$btn_gray-100: #dddddd !default;
+$btn_gray-200: #c1c1c1 !default;
+$btn_gray-300: #767579 !default;
+$btn_yellow__hover: #FFC402 !default;
+
+// 边框色
+$border_gray: #dddddd !default;
+
+// 进度条色
+$progressBar__loaded: #ffcb00;
+$progressBar__unload: #c1c1c1;
+
+// 输入框色
+$input_gray: #dddddd;
+
+/*--------------------------------------- open to Expand，close to Modify*/
+/*this is color map lists (interfaces)*/
+$grays: () !default;
+$grays: map-merge((
+        100: $gray-100,
+        200: $gray-200,
+        300: $gray-300,
+        400: $gray-400,
+        500: $gray-500,
+        600: $gray-600,
+        700: $gray-700,
+        800: $gray-800,
+        900: $gray-900
+), $grays);
+
+$colors: () !default;
+$colors: map-merge((
+        yellow-100:$yellow-100,
+        yellow-200:$yellow-200,
+        orange:$orange,
+        red:$red,
+        blue:$blue,
+        white:$white,
+        black:$black
+), $colors);
+
+$buttons: () !default;
+$buttons: map_merge((
+        yellow:$btn_yellow,
+        yellow__hover:$btn_yellow__hover,
+        gray-100:$btn_gray-100,
+        gray-200:$btn_gray-100,
+        gray-300:$btn_gray-100,
+), $buttons) !default;
+
+$inputs: () !default;
+$inputs: map_merge((
+        gray:$input_gray
+), $inputs) !default;
+
+$backgrounds: () !default;
+$backgrounds: map_merge((
+        normal:$bg,
+        hover:$bg__hover
+), $backgrounds) !default;
+
+$progressBars: () !default;
+$progressBars: map_merge((
+        loaded:$progressBar__loaded,
+        unload:$progressBar__unload
+), $progressBars) !default;
+
+$borders: () !default;
+$borders: map_merge((
+        gray:$border_gray
+), $borders)
