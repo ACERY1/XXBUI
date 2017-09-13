@@ -28,5 +28,5 @@
 }
 
 @function border_clr($key){
-  @return map_get($buttons,$key)
+  @return map_get($borders,$key)
 }

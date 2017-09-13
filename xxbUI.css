@@ -36,6 +36,9 @@ body {
   font-size: 1rem;
   font-weight: normal; }
 
+div {
+  box-sizing: border-box; }
+
 hr {
   box-sizing: content-box;
   height: 0;
@@ -43,6 +46,9 @@ hr {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0; }
+
+ul, ol {
+  list-style-type: none; }
 
 p {
   margin-top: 0; }
@@ -134,6 +140,21 @@ progress {
   font: inherit;
   -webkit-appearance: button; }
 
+.sampleBox, .sampleBox1, .sampleBox2, .sampleBox3 {
+  border: 1px solid #dddddd; }
+
+.sampleBox1 {
+  width: 100px;
+  height: 100px; }
+
+.sampleBox2 {
+  width: 200px;
+  height: 200px; }
+
+.sampleBox3 {
+  width: 300px;
+  height: 300px; }
+
 /*实用类全局命名空间
 --------------*/
 /*布局全局命名空间
@@ -141,12 +162,12 @@ progress {
 .l-row__mid {
   display: flex;
   flex-flow: nowrap column;
-  justify-content: center; }
+  align-items: center; }
 
 .l-col__mid {
   display: flex;
   flex-flow: nowrap column;
-  align-items: center; }
+  justify-content: center; }
 
 .l-all__mid {
   display: flex;

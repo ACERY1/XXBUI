@@ -1,1 +1,21 @@
 @import "reset";
+
+.sampleBox{
+  @include border-full(1px,border_clr(gray))
+}
+
+.sampleBox1{
+  @include wh(100px,100px);
+  @extend .sampleBox
+
+}
+
+.sampleBox2{
+  @include wh(200px,200px);
+  @extend .sampleBox
+}
+
+.sampleBox3{
+  @include wh(300px,300px);
+  @extend .sampleBox
+}

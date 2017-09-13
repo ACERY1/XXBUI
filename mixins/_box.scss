@@ -1,0 +1,18 @@
+/*y  x*/
+@mixin marginX($X) {
+  margin: 0 $X;
+}
+
+@mixin marginY($Y) {
+  margin: $Y 0;
+}
+
+@mixin paddingX($X) {
+  padding: 0 $X;
+}
+
+@mixin paddingY($Y) {
+  padding: $Y 0;
+}
+
+
