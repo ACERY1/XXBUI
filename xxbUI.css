@@ -1,12 +1,10 @@
 @charset "UTF-8";
 /*第三方库
 --------------*/
-/*基础样式与重置样式
+/*导入函数
 --------------*/
-/*the interface to operate the map of some values*/
-/*key is size*/
-/*key is status*/
-/*key is status*/
+/*业务变量
+--------------*/
 /*配置颜色
 * 命名规则
 *  _color  ,__status, -size 优先性如该顺序
@@ -26,6 +24,13 @@
 /*标题字体大小*/
 /*自定义字体大小*/
 /*input padding*/
+/*the interface to operate the map of some values*/
+/*key is size*/
+/*key is status*/
+/*key is status*/
+/*-----------------以下是向外部暴露的className----------------------*/
+/*基础样式与重置样式
+--------------*/
 body {
   margin: 0;
   font-size: 1rem;
@@ -131,54 +136,8 @@ progress {
 
 /*实用类全局命名空间
 --------------*/
-/*the interface to operate the map of some values*/
-/*key is size*/
-/*key is status*/
-/*key is status*/
-/*配置颜色
-* 命名规则
-*  _color  ,__status, -size 优先性如该顺序
-*/
-/*字体颜色
--------------------*/
-/*主色调
--------------------*/
-/*功能颜色
--------------------*/
-/*--------------------------------------- open to Expand，close to Modify*/
-/*this is color map lists (interfaces)*/
-/*主题变量*/
-/*文字排版*/
-/*字体大小*/
-/*字体粗度*/
-/*标题字体大小*/
-/*自定义字体大小*/
-/*input padding*/
 /*布局全局命名空间
 --------------*/
-/*the interface to operate the map of some values*/
-/*key is size*/
-/*key is status*/
-/*key is status*/
-/*配置颜色
-* 命名规则
-*  _color  ,__status, -size 优先性如该顺序
-*/
-/*字体颜色
--------------------*/
-/*主色调
--------------------*/
-/*功能颜色
--------------------*/
-/*--------------------------------------- open to Expand，close to Modify*/
-/*this is color map lists (interfaces)*/
-/*主题变量*/
-/*文字排版*/
-/*字体大小*/
-/*字体粗度*/
-/*标题字体大小*/
-/*自定义字体大小*/
-/*input padding*/
 .l-row__mid {
   display: flex;
   flex-flow: nowrap column;
@@ -209,76 +168,11 @@ progress {
 
 /*组件全局命名空间
 --------------*/
-/*配置颜色
-* 命名规则
-*  _color  ,__status, -size 优先性如该顺序
-*/
-/*字体颜色
--------------------*/
-/*主色调
--------------------*/
-/*功能颜色
--------------------*/
-/*--------------------------------------- open to Expand，close to Modify*/
-/*this is color map lists (interfaces)*/
-/*主题变量*/
-/*文字排版*/
-/*字体大小*/
-/*字体粗度*/
-/*标题字体大小*/
-/*自定义字体大小*/
-/*input padding*/
 /*对象全局命名空间
 --------------*/
-/*the interface to operate the map of some values*/
-/*key is size*/
-/*key is status*/
-/*key is status*/
-/*配置颜色
-* 命名规则
-*  _color  ,__status, -size 优先性如该顺序
-*/
-/*字体颜色
--------------------*/
-/*主色调
--------------------*/
-/*功能颜色
--------------------*/
-/*--------------------------------------- open to Expand，close to Modify*/
-/*this is color map lists (interfaces)*/
-/*主题变量*/
-/*文字排版*/
-/*字体大小*/
-/*字体粗度*/
-/*标题字体大小*/
-/*自定义字体大小*/
-/*input padding*/
 /*弹出类*/
 /*按键类*/
 /*状态全局命名空间
 --------------*/
-/*the interface to operate the map of some values*/
-/*key is size*/
-/*key is status*/
-/*key is status*/
-/*配置颜色
-* 命名规则
-*  _color  ,__status, -size 优先性如该顺序
-*/
-/*字体颜色
--------------------*/
-/*主色调
--------------------*/
-/*功能颜色
--------------------*/
-/*--------------------------------------- open to Expand，close to Modify*/
-/*this is color map lists (interfaces)*/
-/*主题变量*/
-/*文字排版*/
-/*字体大小*/
-/*字体粗度*/
-/*标题字体大小*/
-/*自定义字体大小*/
-/*input padding*/
 
 /*# sourceMappingURL=xxbUI.css.map */
