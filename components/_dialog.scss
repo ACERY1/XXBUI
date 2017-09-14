@@ -1,0 +1,21 @@
+.c-dialog{
+  /*提示文字*/
+  .c-dialog__title{}
+  .c-dialog__cont{}
+  .o-btn{
+    margin: 0 20px;
+  }
+}
+/*尺寸*/
+.c-dialog__lg{
+  //@include wh($di)
+}
+.c-dialog__mid{}
+.c-dialog__sm{}
+.c-dialog__xs{}
+
+/*颜色*/
+.c-dialog__dark{}
+.c-dialog__light{}
+
+

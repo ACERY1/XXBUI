@@ -29,7 +29,9 @@ ul,ol{
 }
 
 p {
-  margin-top: 0;
+  margin:0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
   //margin-bottom: $paragraph-margin-bottom;
 }
 
@@ -48,6 +50,7 @@ textarea {
   font-size: inherit;
   line-height: inherit;
   outline: none;
+  border-image: none;
 }
 
 
@@ -59,6 +62,8 @@ input {
 button,
 select {
   text-transform: none; // Remove the inheritance of text transform in Firefox
+  margin:0; padding:0; list-style-type:none;
+  border: none;
 }
 
 // 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
@@ -147,7 +152,7 @@ progress {
   // `.form-control` class can properly style them. Note that this cannot simply
   // be added to `.form-control` as it's not specific enough. For details, see
   // https://github.com/twbs/bootstrap/issues/11586.
-  outline-offset: -2px; // 2. Correct the outline style in Safari.
+  //outline-offset: -2px; // 2. Correct the outline style in Safari.
   -webkit-appearance: none;
 }
 

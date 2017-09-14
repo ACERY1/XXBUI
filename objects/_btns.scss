@@ -1,1 +1,93 @@
-.o-btn{}
+.o-btn {
+  cursor: pointer;
+  @include allMidBox();
+  @include wh($buttons-default-width, $buttons-default-height);
+  @include fontSizeColor($buttons-default-font-size, font_clr(gray-900));
+  background: $buttons-default-background-color;
+  @include border-radius($border-default-radius);
+}
+
+
+/*尺寸*/
+.o-btn__lg {
+  @extend .o-btn;
+  @include wh($buttons-lg-width, $buttons-lg-height);
+  font-size: $buttons-lg-font-size;
+}
+
+.o-btn__mid {
+  @extend .o-btn;
+  @include wh($buttons-mid-width, $buttons-mid-height);
+  font-size: $buttons-mid-font-size;
+}
+
+.o-btn__sm {
+  @extend .o-btn;
+  @include wh($buttons-sm-width, $buttons-sm-height);
+  font-size: $buttons-sm-font-size;
+}
+
+.o-btn__xs {
+  @extend .o-btn;
+  @include wh($buttons-xs-width, $buttons-xs-height);
+  font-size: $buttons-xs-font-size;
+}
+
+
+/*颜色*/
+.o-btn__normal {
+  @extend .o-btn;
+  background: color(yellow-100);
+}
+
+.o-btn__clear {
+  @extend .o-btn;
+  background: color(white);
+}
+
+.o-btn__hover {
+  @extend .o-btn;
+  background: color(yellow-200);
+}
+
+.o-btn__disabled {
+  @extend .o-btn;
+  background: button_clr(gray-100);
+}
+
+.o-btn__tool {
+  @extend .o-btn;
+  background: button_clr(black);
+}
+
+/*字体颜色*/
+
+.o-btn__ftWhite{
+  @extend .o-btn;
+  color: color(white);
+}
+
+.o-btn__ftBlack{
+  @extend .o-btn;
+  color: color(black);
+}
+
+/*圆角与边框*/
+.o-btn__radius {
+  @extend .o-btn;
+  @include border-radius($border-radius);
+}
+
+.o-btn__border {
+  @extend .o-btn;
+  @include border-full(1px,font_clr(gray-900))
+}
+
+
+/*按钮组*/
+.o-btn__group{
+  .o-btn{
+    margin: $buttons-default-group-margin;
+  }
+}
+

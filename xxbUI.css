@@ -51,7 +51,9 @@ ul, ol {
   list-style-type: none; }
 
 p {
-  margin-top: 0; }
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0; }
 
 img {
   vertical-align: middle;
@@ -66,7 +68,8 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  outline: none; }
+  outline: none;
+  border-image: none; }
 
 button,
 input {
@@ -74,7 +77,11 @@ input {
 
 button,
 select {
-  text-transform: none; }
+  text-transform: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border: none; }
 
 button,
 html [type="button"],
@@ -129,7 +136,6 @@ progress {
   height: auto; }
 
 [type="search"] {
-  outline-offset: -2px;
   -webkit-appearance: none; }
 
 [type="search"]::-webkit-search-cancel-button,
@@ -140,7 +146,7 @@ progress {
   font: inherit;
   -webkit-appearance: button; }
 
-.sampleBox, .sampleBox1, .sampleBox2, .sampleBox3 {
+.sampleBox, .sampleBox1, .sampleBox2, .sampleBox3, .sampleBox4, .sampleBox5 {
   border: 1px solid #dddddd; }
 
 .sampleBox1 {
@@ -154,6 +160,16 @@ progress {
 .sampleBox3 {
   width: 300px;
   height: 300px; }
+
+.sampleBox4 {
+  width: 800px;
+  height: auto;
+  padding: 20px; }
+
+.sampleBox5 {
+  width: 1000px;
+  height: auto;
+  padding: 20px; }
 
 /*实用类全局命名空间
 --------------*/
@@ -177,22 +193,89 @@ progress {
 
 .l-row {
   display: flex;
-  flex-flow: wrap row;
-  justify-content: flex-start;
-  align-items: flex-start; }
+  flex-flow: wrap row; }
 
 .l-col {
   display: flex;
-  flex-flow: wrap column;
-  justify-content: flex-start;
-  align-items: flex-start; }
+  flex-flow: wrap column; }
 
 /*组件全局命名空间
 --------------*/
+.c-dialog {
+  /*提示文字*/ }
+  .c-dialog .o-btn, .c-dialog .o-btn__lg, .c-dialog .o-btn__mid, .c-dialog .o-btn__sm, .c-dialog .o-btn__xs, .c-dialog .o-btn__normal, .c-dialog .o-btn__clear, .c-dialog .o-btn__hover, .c-dialog .o-btn__disabled, .c-dialog .o-btn__tool, .c-dialog .o-btn__ftWhite, .c-dialog .o-btn__ftBlack, .c-dialog .o-btn__radius, .c-dialog .o-btn__border {
+    margin: 0 20px; }
+
+/*尺寸*/
+/*颜色*/
 /*对象全局命名空间
 --------------*/
-/*弹出类*/
 /*按键类*/
+.o-btn, .o-btn__lg, .o-btn__mid, .o-btn__sm, .o-btn__xs, .o-btn__normal, .o-btn__clear, .o-btn__hover, .o-btn__disabled, .o-btn__tool, .o-btn__ftWhite, .o-btn__ftBlack, .o-btn__radius, .o-btn__border {
+  cursor: pointer;
+  display: flex;
+  flex-flow: nowrap column;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 44px;
+  font-size: 14px;
+  color: #231815;
+  background: #dcdbdc;
+  border-radius: 2px; }
+
+/*尺寸*/
+.o-btn__lg {
+  width: 250px;
+  height: 50px;
+  font-size: 20px; }
+
+.o-btn__mid {
+  width: 180px;
+  height: 44px;
+  font-size: 18px; }
+
+.o-btn__sm {
+  width: 130px;
+  height: 44px;
+  font-size: 16px; }
+
+.o-btn__xs {
+  width: 80px;
+  height: 30px;
+  font-size: 12px; }
+
+/*颜色*/
+.o-btn__normal {
+  background: #ffd944; }
+
+.o-btn__clear {
+  background: #fff; }
+
+.o-btn__hover {
+  background: #ffcb00; }
+
+.o-btn__tool {
+  background: #000; }
+
+/*字体颜色*/
+.o-btn__ftWhite {
+  color: #fff; }
+
+.o-btn__ftBlack {
+  color: #000; }
+
+/*圆角与边框*/
+.o-btn__radius {
+  border-radius: 22px; }
+
+.o-btn__border {
+  border: 1px solid #231815; }
+
+/*按钮组*/
+.o-btn__group .o-btn, .o-btn__group .o-btn__lg, .o-btn__group .o-btn__mid, .o-btn__group .o-btn__sm, .o-btn__group .o-btn__xs, .o-btn__group .o-btn__normal, .o-btn__group .o-btn__clear, .o-btn__group .o-btn__hover, .o-btn__group .o-btn__disabled, .o-btn__group .o-btn__tool, .o-btn__group .o-btn__ftWhite, .o-btn__group .o-btn__ftBlack, .o-btn__group .o-btn__radius, .o-btn__group .o-btn__border {
+  margin: 20px; }
+
 /*状态全局命名空间
 --------------*/
 

@@ -24,14 +24,14 @@
 @mixin rowBox {
   display: flex;
   flex-flow: wrap row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  //justify-content: flex-start;
+  //align-items: flex-start;
 }
 
 // 竖直排列盒子
 @mixin colBox{
   display: flex;
   flex-flow: wrap column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  //justify-content: flex-start;
+  //align-items: flex-start;
 }

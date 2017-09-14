@@ -52,15 +52,15 @@ $input_gray: #dddddd;
 /*this is color map lists (interfaces)*/
 $grays: () !default;
 $grays: map-merge((
-        100: $gray-100,
-        200: $gray-200,
-        300: $gray-300,
-        400: $gray-400,
-        500: $gray-500,
-        600: $gray-600,
-        700: $gray-700,
-        800: $gray-800,
-        900: $gray-900
+        gray-100: $gray-100,
+        gray-200: $gray-200,
+        gray-300: $gray-300,
+        gray-400: $gray-400,
+        gray-500: $gray-500,
+        gray-600: $gray-600,
+        gray-700: $gray-700,
+        gray-800: $gray-800,
+        gray-900: $gray-900
 ), $grays);
 
 $colors: () !default;
@@ -74,7 +74,9 @@ $colors: map-merge((
         black:$black
 ), $colors);
 
-$buttons: () !default;
+$buttons: (
+  black:$black
+) !default;
 $buttons: map_merge((
         yellow:$btn_yellow,
         yellow__hover:$btn_yellow__hover,

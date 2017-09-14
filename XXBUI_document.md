@@ -32,7 +32,7 @@
 ├── utils   .u命名空间
 ├── variables 项目中使用的变量(如颜色，字体，媒体查询临界值)(含.t1,.s1命名空间)
 │   └── _color.scss
-├── xxbUI.css 编译生成文件
+├── xxbUI.css 编译生成文件 <--- 最终的使用文件
 ├── xxbUI.css.map 
 └── xxbUI.scss 入口文件，导入以上各文件
 

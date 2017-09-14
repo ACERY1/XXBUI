@@ -19,3 +19,15 @@
   @include wh(300px,300px);
   @extend .sampleBox
 }
+
+.sampleBox4{
+  @include wh(800px,auto);
+  padding: 20px;
+  @extend .sampleBox
+}
+
+.sampleBox5{
+  @extend .sampleBox;
+  @include wh(1000px,auto);
+  padding: 20px;
+}
